@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FPGiOS.xcodeproj">
+      location = "self:/Users/xlfdll/Documents/XcodeProjects/FPGiOS/FPGiOS.xcodeproj">
    </FileRef>
 </Workspace>

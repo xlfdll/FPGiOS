@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  FPGiOS
-//
-//  Created by Xlfdll on 2019/06/30.
-//  Copyright © 2019 Xlfdll Workstation. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
