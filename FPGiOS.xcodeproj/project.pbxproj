@@ -8,14 +8,84 @@
 
 /* Begin PBXBuildFile section */
 		452A298622E8258C0054BA0D /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A298522E8258C0054BA0D /* OptionsViewController.swift */; };
+		452A298822E82CAC0054BA0D /* AppDataKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A298722E82CAC0054BA0D /* AppDataKeys.swift */; };
+		452A298A22E83A9B0054BA0D /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A298922E83A9B0054BA0D /* PasswordHelper.swift */; };
+		452A29C622E991DD0054BA0D /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452A29BD22E991AC0054BA0D /* CryptoSwift.framework */; };
+		452A29C722E991DD0054BA0D /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 452A29BD22E991AC0054BA0D /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		452A29CC22E995FC0054BA0D /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A29CB22E995FC0054BA0D /* StringHelper.swift */; };
+		4595346622EE99500055D9A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4595346522EE99500055D9A8 /* Localizable.strings */; };
 		459D9A7122C8CE79006FAE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459D9A7022C8CE79006FAE6A /* AppDelegate.swift */; };
 		459D9A7322C8CE79006FAE6A /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459D9A7222C8CE79006FAE6A /* PasswordViewController.swift */; };
 		459D9A7622C8CE79006FAE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459D9A7422C8CE79006FAE6A /* Main.storyboard */; };
 		459D9A7822C8CE7A006FAE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459D9A7722C8CE7A006FAE6A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		452A29BC22E991AC0054BA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		452A29BE22E991AC0054BA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75211F92207249D8004E41F8;
+			remoteInfo = "CryptoSwift-TestHostApp";
+		};
+		452A29C022E991AC0054BA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = Tests;
+		};
+		452A29C222E991AC0054BA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7595C14A2072E48C00EA1A5F;
+			remoteInfo = "TestsPerformance-Mac";
+		};
+		452A29C422E991AC0054BA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7564F0602072EAEB00CA5A96;
+			remoteInfo = "TestsPerformance-iOS";
+		};
+		452A29C822E991DD0054BA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		452A29CA22E991DD0054BA0D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				452A29C722E991DD0054BA0D /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		452A298522E8258C0054BA0D /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		452A298722E82CAC0054BA0D /* AppDataKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataKeys.swift; sourceTree = "<group>"; };
+		452A298922E83A9B0054BA0D /* PasswordHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHelper.swift; sourceTree = "<group>"; };
+		452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
+		452A29CB22E995FC0054BA0D /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		4595346522EE99500055D9A8 /* Localizable.strings */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		459D9A6D22C8CE79006FAE6A /* FPGiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPGiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		459D9A7022C8CE79006FAE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		459D9A7222C8CE79006FAE6A /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
@@ -29,15 +99,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452A29C622E991DD0054BA0D /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452A29B522E991AC0054BA0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				452A29BD22E991AC0054BA0D /* CryptoSwift.framework */,
+				452A29BF22E991AC0054BA0D /* CryptoSwift-TestHostApp.app */,
+				452A29C122E991AC0054BA0D /* Tests.xctest */,
+				452A29C322E991AC0054BA0D /* TestsPerformance-Mac.xctest */,
+				452A29C522E991AC0054BA0D /* TestsPerformance-iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		459D9A6422C8CE79006FAE6A = {
 			isa = PBXGroup;
 			children = (
+				452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */,
 				459D9A6F22C8CE79006FAE6A /* FPGiOS */,
 				459D9A6E22C8CE79006FAE6A /* Products */,
 			);
@@ -54,12 +138,16 @@
 		459D9A6F22C8CE79006FAE6A /* FPGiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4595346522EE99500055D9A8 /* Localizable.strings */,
+				452A298922E83A9B0054BA0D /* PasswordHelper.swift */,
 				459D9A7022C8CE79006FAE6A /* AppDelegate.swift */,
 				459D9A7222C8CE79006FAE6A /* PasswordViewController.swift */,
 				459D9A7422C8CE79006FAE6A /* Main.storyboard */,
 				459D9A7722C8CE7A006FAE6A /* Assets.xcassets */,
 				459D9A7C22C8CE7A006FAE6A /* Info.plist */,
 				452A298522E8258C0054BA0D /* OptionsViewController.swift */,
+				452A298722E82CAC0054BA0D /* AppDataKeys.swift */,
+				452A29CB22E995FC0054BA0D /* StringHelper.swift */,
 			);
 			path = FPGiOS;
 			sourceTree = "<group>";
@@ -74,10 +162,12 @@
 				459D9A6922C8CE79006FAE6A /* Sources */,
 				459D9A6A22C8CE79006FAE6A /* Frameworks */,
 				459D9A6B22C8CE79006FAE6A /* Resources */,
+				452A29CA22E991DD0054BA0D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				452A29C922E991DD0054BA0D /* PBXTargetDependency */,
 			);
 			name = FPGiOS;
 			productName = FPGiOS;
@@ -111,6 +201,12 @@
 			mainGroup = 459D9A6422C8CE79006FAE6A;
 			productRefGroup = 459D9A6E22C8CE79006FAE6A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 452A29B522E991AC0054BA0D /* Products */;
+					ProjectRef = 452A29B422E991AC0054BA0D /* CryptoSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				459D9A6C22C8CE79006FAE6A /* FPGiOS */,
@@ -118,12 +214,51 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		452A29BD22E991AC0054BA0D /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 452A29BC22E991AC0054BA0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		452A29BF22E991AC0054BA0D /* CryptoSwift-TestHostApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "CryptoSwift-TestHostApp.app";
+			remoteRef = 452A29BE22E991AC0054BA0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		452A29C122E991AC0054BA0D /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 452A29C022E991AC0054BA0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		452A29C322E991AC0054BA0D /* TestsPerformance-Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "TestsPerformance-Mac.xctest";
+			remoteRef = 452A29C222E991AC0054BA0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		452A29C522E991AC0054BA0D /* TestsPerformance-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "TestsPerformance-iOS.xctest";
+			remoteRef = 452A29C422E991AC0054BA0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		459D9A6B22C8CE79006FAE6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				459D9A7822C8CE7A006FAE6A /* Assets.xcassets in Resources */,
+				4595346622EE99500055D9A8 /* Localizable.strings in Resources */,
 				459D9A7622C8CE79006FAE6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,13 +270,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452A29CC22E995FC0054BA0D /* StringHelper.swift in Sources */,
 				452A298622E8258C0054BA0D /* OptionsViewController.swift in Sources */,
+				452A298A22E83A9B0054BA0D /* PasswordHelper.swift in Sources */,
 				459D9A7322C8CE79006FAE6A /* PasswordViewController.swift in Sources */,
 				459D9A7122C8CE79006FAE6A /* AppDelegate.swift in Sources */,
+				452A298822E82CAC0054BA0D /* AppDataKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		452A29C922E991DD0054BA0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = 452A29C822E991DD0054BA0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		459D9A7422C8CE79006FAE6A /* Main.storyboard */ = {
@@ -274,16 +420,21 @@
 		459D9A8022C8CE7A006FAE6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FPGiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.xlfdll.FPGiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = org.xlfdll.nb.FPG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,16 +444,21 @@
 		459D9A8122C8CE7A006FAE6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FPGiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.xlfdll.FPGiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = org.xlfdll.nb.FPG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

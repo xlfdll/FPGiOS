@@ -1,3 +1,11 @@
+//
+//  AppDelegate.swift
+//  FPGiOS
+//
+//  Created by Xlfdll on 2019/07/25.
+//  Copyright © 2019 Xlfdll Workstation. All rights reserved.
+//
+
 import UIKit
 
 @UIApplicationMain
@@ -5,9 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // First-time run will create all settings
+        // UUID will be created in the first view controller instead (to show first-time alert)
+        if (UserDefaults.standard.object(forKey: AppDataKeys.UserUUIDKey) == nil) {
+            UserDefaults.standard.set(true, forKey: AppDataKeys.AutoCopyPasswordKey)
+            UserDefaults.standard.set(true, forKey: AppDataKeys.SaveLastUserSaltKey)
+
+            UserDefaults.standard.set(16, forKey: AppDataKeys.PasswordLengthKey)
+            UserDefaults.standard.set("", forKey: AppDataKeys.UserSaltKey)
+            UserDefaults.standard.set(PasswordHelper.generateSalt(length: PasswordHelper.RandomSaltLength), forKey: AppDataKeys.RandomSaltKey)
+        }
+
         return true
     }
 
