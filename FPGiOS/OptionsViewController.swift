@@ -28,7 +28,7 @@ class OptionsViewController: UITableViewController, UIPickerViewDelegate, UIPick
 
         // Edit Random Salt
         if indexPath.row == 0 {
-            let alert = UIAlertController(title: NSLocalizedString("RandomSaltAlert.Title", comment: "Edit random salt"),
+            let alert = UIAlertController(title: NSLocalizedString("EditRandomSaltAlert.Title", comment: "Edit random salt"),
                 message: "",
                 preferredStyle: UIAlertController.Style.alert)
 
@@ -46,7 +46,7 @@ class OptionsViewController: UITableViewController, UIPickerViewDelegate, UIPick
 
             alert.addTextField { (textField: UITextField) in
                 textField.text = String(UserDefaults.standard.string(forKey: AppDataKeys.RandomSaltKey)!)
-                textField.placeholder = NSLocalizedString("RandomSaltAlert.Placeholder", comment: "Random salt input placeholder")
+                textField.placeholder = NSLocalizedString("EditRandomSaltAlert.Placeholder", comment: "Random salt input placeholder")
                 textField.addTarget(self,
                     action: #selector(self.randomSaltValidate(textField:)),
                     for: UITextField.Event.editingChanged)

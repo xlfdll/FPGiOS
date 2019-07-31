@@ -17,8 +17,8 @@
 "FirstTimeAlert.Title" = "Welcome!";
 "FirstTimeAlert.Content" = "This is your first time to use this app.\n\nA new random salt has been created for you.\n\nIt is highly recommended to backup your new random salt or restore your existing one in Options screen as soon as possible to avoid losing access to your passwords.";
 
-"RandomSaltAlert.Title" = "Change Random Salt";
-"RandomSaltAlert.Placeholder" = "Enter your random salt";
+"EditRandomSaltAlert.Title" = "Edit Random Salt";
+"EditRandomSaltAlert.Placeholder" = "Enter your random salt";
 
 "GenerateNewRandomSaltAlert.Title" = "Generate New Random Salt";
 "GenerateNewRandomSaltCompleteAlert.Message" = "A new random salt has been generated.";
