@@ -219,13 +219,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiX-wt-RDp">
-                                                    <rect key="frame" x="19.999999999999993" y="11" width="124.33333333333331" height="22"/>
+                                                    <rect key="frame" x="20.000000000000007" y="11" width="124.66666666666669" height="22"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <pickerView contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="hLg-B7-lGs">
-                                                    <rect key="frame" x="152" y="0.0" width="242" height="45"/>
+                                                    <rect key="frame" x="153" y="0.0" width="0.0" height="45"/>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>

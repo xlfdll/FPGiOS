@@ -8,20 +8,22 @@
 
 import UIKit
 
-class PasswordViewController: UITableViewController {
+class PasswordViewController: UITableViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        KeywordUITextField.delegate = self
 
         if UserDefaults.standard.object(forKey: AppDataKeys.UserUUIDKey) == nil {
             UserDefaults.standard.set(UUID().uuidString, forKey: AppDataKeys.UserUUIDKey)
 
             let alert = UIAlertController(title: NSLocalizedString("FirstTimeAlert.Title", comment: "First-time alert title"),
-                                          message: NSLocalizedString("FirstTimeAlert.Content", comment: "First-time alert text content"),
-                                          preferredStyle: UIAlertController.Style.alert)
+                message: NSLocalizedString("FirstTimeAlert.Content", comment: "First-time alert text content"),
+                preferredStyle: UIAlertController.Style.alert)
 
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"),
-                                          style: UIAlertAction.Style.default))
+                style: UIAlertAction.Style.default))
 
             self.present(alert, animated: true)
         }
@@ -53,8 +55,8 @@ class PasswordViewController: UITableViewController {
 
     @IBAction func generatePasswordAction(_ sender: Any) {
         PasswordUILabel.text = PasswordHelper.generatePassword(keyword: KeywordUITextField.text!,
-                                                               salt: UserSaltUITextField.text!,
-                                                               length: UserDefaults.standard.integer(forKey: AppDataKeys.PasswordLengthKey))
+            salt: UserSaltUITextField.text!,
+            length: UserDefaults.standard.integer(forKey: AppDataKeys.PasswordLengthKey))
         PasswordUILabel.sizeToFit()
 
         if UserDefaults.standard.bool(forKey: AppDataKeys.AutoCopyPasswordKey) && !(PasswordUILabel.text ?? "").isEmpty {
@@ -66,6 +68,14 @@ class PasswordViewController: UITableViewController {
         }
 
         CopyPasswordUIButton.isEnabled = !(PasswordUILabel.text ?? "").isEmpty
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if GeneratePasswordUIButton.isEnabled {
+            generatePasswordAction(textField as Any)
+        }
+
+        return textField.resignFirstResponder()
     }
 
     @IBOutlet weak var KeywordUITextField: UITextField!
