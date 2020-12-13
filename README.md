@@ -1,4 +1,6 @@
 # Fkulc's Password Generator - iOS Version
+<strong style="color: red;">(Archived. New version is merged into <a href="https://github.com/xlfdll/FPGMobile">FPG Mobile repository</a>)</strong>
+
 An iOS implementation of [Fkulc's Password Generator (FPG)](https://github.com/xlfdll/FPG)
 
 <p align="center">
